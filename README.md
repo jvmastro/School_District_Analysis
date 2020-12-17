@@ -1,6 +1,6 @@
 # School_District_Analysis
 
-##Project Overview 
+## Project Overview 
 
 A school board has granted access to informationrelating to schools in a certain district and the standarzied test scores (math and reading) for each school. The board would like to have an analysis performed on the student and school data provided to see how well these schools are performing and how funding is allocated. 
 
@@ -19,18 +19,22 @@ Detailed below is the method taken to analyze the two data sets (students and sc
 The data that was used for this analysis can be found in [Student Data](Resources/students_complete.csv) and [School Data](Resources/schools_complete.csv). Within [Student Data](Resources/students_complete.csv) , pre-fixes were input onto certain values that needed to be removed with the following code:
 
 '''py
-prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
 
-for word in prefixes_suffixes:
-  student_data_df["student_name"] = student_data_df["student_name"].str.replace(word,"")
+    prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
+
+    for word in prefixes_suffixes:
+      student_data_df["student_name"] = student_data_df["student_name"].str.replace(word,"")
+    
 '''
 
 The primary step in this analysis involved replacing the inadmissble grades for 9th graders at Thomas High School with "NaN" values. The following code was used to replace both math and reading scores:
 
 '''py
-student_data_df.loc[(student_data_df["school_name"]=="Thomas High School") & (student_data_df["grade"]=="9th"), "reading_score"]=np.nan
 
-student_data_df.loc[(student_data_df["school_name"]=="Thomas High School") & (student_data_df["grade"]=="9th"), "math_score"]=np.nan
+    student_data_df.loc[(student_data_df["school_name"]=="Thomas High School") & (student_data_df["grade"]=="9th"), "reading_score"]=np.nan
+
+    student_data_df.loc[(student_data_df["school_name"]=="Thomas High School") & (student_data_df["grade"]=="9th"), "math_score"]=np.nan
+
 '''
 Secondly, an analysis was performed on the entire district. The results are as followed:
 

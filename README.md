@@ -16,7 +16,9 @@ Detailed below is the method taken to analyze the two data sets (students and sc
 
 ## Methods
 
-The data that was used for this analysis can be found in [Student Data](Resources/students_complete.csv) and [School Data](Resources/schools_complete.csv). The finalized code can be found in [pycity schools]() Within [Student Data](Resources/students_complete.csv) , pre-fixes were input onto certain values that needed to be removed with the following code:
+The data that was used for this analysis can be found in [Student Data](Resources/students_complete.csv) and [School Data](Resources/schools_complete.csv). The finalized code can be found in [PyCity Schools Code](PyCitySchools_Rework_Project.ipynb).
+
+Within [Student Data](Resources/students_complete.csv) , pre-fixes were input onto certain values that needed to be removed with the following code:
 
   
     prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
@@ -52,7 +54,13 @@ From there, the school analysis was performed. The following were organized into
 
 For Thomas High School, all of the 9th grade scores for math and reading were removed. The percentage of students passing math, reading, both subjects, and overall passing percentage needed to be recalculated with those scores removed. The summary points were not caluclated with THS 9th graders as "0" values. These summary points were calculated for only 10-12th graders which were used for the per_school_summary_df(above). The following is a before and after picture:
 
-INSERT BEFORE AND AFTER PICTURE 
+* Before
+
+![before](images/before.png)
+
+* After
+
+![after](images/after.png)
 
 Finally, the below dataframes were created to complete the analysis with the new data:
 

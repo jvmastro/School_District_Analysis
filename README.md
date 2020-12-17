@@ -10,9 +10,9 @@ Detailed below is the method taken to analyze the two data sets (students and sc
 
 ## Tools 
 
-*Jupyter Notebook
-*Pandas Library
-*Numpy Library
+* Jupyter Notebook
+* Pandas Library
+* Numpy Library
 
 ## Methods
 
@@ -36,7 +36,7 @@ The primary step in this analysis involved replacing the inadmissble grades for 
    
 Secondly, an analysis was performed on the entire district. The results are as followed:
 
-INSERT PICTURE OF DF
+![district summary](images/Screen Shot 2020-12-16 at 6.19.53 PM.png)
 
 From there, the school analysis was performed. The following were organized into a new dataframe indexed on school name:
 

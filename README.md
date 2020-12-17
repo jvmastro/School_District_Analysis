@@ -36,7 +36,7 @@ The primary step in this analysis involved replacing the inadmissble grades for 
    
 Secondly, an analysis was performed on the entire district. The results are as followed:
 
-![district summary](images/Screen Shot 2020-12-16 at 6.19.53 PM.png)
+![district summary](images/district_summary.png)
 
 From there, the school analysis was performed. The following were organized into a new dataframe indexed on school name:
 
@@ -66,19 +66,33 @@ Finally the below dataframes were created to complete the analysis with the new 
 
 ## Results 
 
-High Performing Schools
+* High Performing Schools
 
-Low Performing Schools
+![high performing](images/high_performing.png)
 
-Schools Grouped by Math Scores
+* Low Performing Schools
 
-Schools grouped by Reading Scores
+![low performing](images/low_performing.png)
 
-Scores Grouped by School Spending per Student
+* Schools Grouped by Math Scores
 
-Scores Grouped by School Size 
+![math scores](images/math_scores.png)
 
-Scores Grouped by School Type
+* Schools grouped by Reading Scores
+
+![reading scores](images/reading_scores.png) 
+
+* Scores Grouped by School Spending per Student
+
+![spending](images/scores_spending.png)
+
+* Scores Grouped by School Size 
+
+![school size](images/scores_size.png)
+
+* Scores Grouped by School Type
+
+![school type](images/scores_type.png)
 
 
 

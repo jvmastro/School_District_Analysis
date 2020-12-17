@@ -2,11 +2,11 @@
 
 ## Project Overview 
 
-A school board has granted access to informationrelating to schools in a certain district and the standarzied test scores (math and reading) for each school. The board would like to have an analysis performed on the student and school data provided to see how well these schools are performing and how funding is allocated. 
+A school board has granted access to information relating to schools in a certain district and the standarzied test scores (math and reading) for each school. The board would like to have an analysis performed on the student and school data provided to see how well these schools are performing and how funding is allocated. 
 
 After an intial analysis was performed, the school board detailed that scores from 9th graders at Thomas High School had been deemed inadmissibale and must be removed from the calculations. 
 
-Detailed below is the method taken to analyze the two data sets (students and school sets), how they related to one another, and the results after THS scores ahd been removed. 
+Detailed below is the method taken to analyze the two data sets (students and school sets), how they related to one another, and the results after THS scores had been removed. 
 
 ## Tools 
 
@@ -16,7 +16,7 @@ Detailed below is the method taken to analyze the two data sets (students and sc
 
 ## Methods
 
-The data that was used for this analysis can be found in [Student Data](Resources/students_complete.csv) and [School Data](Resources/schools_complete.csv). Within [Student Data](Resources/students_complete.csv) , pre-fixes were input onto certain values that needed to be removed with the following code:
+The data that was used for this analysis can be found in [Student Data](Resources/students_complete.csv) and [School Data](Resources/schools_complete.csv). The finalized code can be found in [pycity schools]() Within [Student Data](Resources/students_complete.csv) , pre-fixes were input onto certain values that needed to be removed with the following code:
 
   
     prefixes_suffixes = ["Dr. ", "Mr. ","Ms. ", "Mrs. ", "Miss ", " MD", " DDS", " DVM", " PhD"]
@@ -50,11 +50,11 @@ From there, the school analysis was performed. The following were organized into
 8. Percentage of Students Passing Reading
 9. Overall Percentage of Students (those who passed both math adn reading)
 
-For Thomas High School, all of the 9th grade scores for math and reading were removed. The percentage of students passing math, reading, both subjects, and overall passing percentage needed to be recalculated with those scores removed. The summary points were not caluclated with THS 9th graders as "0" values. The same summary points were calculated for only 10-12th graders which were used for the per_school_summary_df(above). The following is a before and after picture.
+For Thomas High School, all of the 9th grade scores for math and reading were removed. The percentage of students passing math, reading, both subjects, and overall passing percentage needed to be recalculated with those scores removed. The summary points were not caluclated with THS 9th graders as "0" values. These summary points were calculated for only 10-12th graders which were used for the per_school_summary_df(above). The following is a before and after picture:
 
 INSERT BEFORE AND AFTER PICTURE 
 
-Finally the below dataframes were created to complete the analysis with the new data:
+Finally, the below dataframes were created to complete the analysis with the new data:
 
 1. High Performing Schools
 2. Low Performing Schools
